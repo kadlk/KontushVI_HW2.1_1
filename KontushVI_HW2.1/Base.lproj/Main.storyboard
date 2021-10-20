@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <accessibilityOverrides dynamicTypePreference="2"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +14,30 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KontushVI_HW2_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rna-Lj-wmZ">
-                                <rect key="frame" x="20" y="44" width="374" height="393"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gA9-jK-Hhz" userLabel="Blue">
+                                <rect key="frame" x="60" y="15" width="776" height="173"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zas-gk-Xyc">
-                                <rect key="frame" x="20" y="469" width="374" height="393"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6a-qF-Qrs" userLabel="Red">
+                                <rect key="frame" x="60" y="205" width="776" height="173"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="trailing" secondItem="C6a-qF-Qrs" secondAttribute="trailing" id="20C-kn-njV"/>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.417411" id="3R6-83-Zde"/>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Lhx-Do-pcL"/>
+                            <constraint firstItem="C6a-qF-Qrs" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.417411" id="MBt-UZ-lSm"/>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="PyX-rF-OAb"/>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="leading" secondItem="C6a-qF-Qrs" secondAttribute="leading" id="arc-cl-qoO"/>
+                            <constraint firstItem="gA9-jK-Hhz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="cSY-eK-4sw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C6a-qF-Qrs" secondAttribute="bottom" constant="15" id="ie1-FN-55E"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,11 +49,11 @@
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemBrownColor">
-            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
